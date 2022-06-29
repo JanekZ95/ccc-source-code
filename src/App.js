@@ -38,7 +38,7 @@ function App() {
 			{filteredCoins.map((coin) => {
 				return (
 					<Coin
-            rank={coin.market_cap_rank}
+            					rank={coin.market_cap_rank}
 						key={coin.id}
 						name={coin.name}
 						image={coin.image}
@@ -46,7 +46,7 @@ function App() {
 						marketcap={coin.market_cap}
 						price={coin.current_price}
 						priceChange={coin.price_change_percentage_24h}
-            volume={coin.total_volume}
+            					volume={coin.total_volume}
 					/>
 				);
 			})}
